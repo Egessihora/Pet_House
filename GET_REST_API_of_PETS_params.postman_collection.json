@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "366e17f1-1d13-4f9b-a68d-09cc8db98d4e",
+		"name": "Проверка GET-запросов фильтра Дом Питомца",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25387683"
+	},
+	"item": [
+		{
+			"name": "Проверка фильтров Дом Питомца",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}?species__name={{name}}&breed__code={{type}}&gender__code={{gender}}&age={{age}}",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "species__name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "breed__code",
+							"value": "{{type}}"
+						},
+						{
+							"key": "gender__code",
+							"value": "{{gender}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://158.160.56.133/app/pets",
+			"type": "string"
+		},
+		{
+			"key": "name",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "type",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "gender",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "age",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
