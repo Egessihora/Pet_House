@@ -18,6 +18,6 @@ ___
 - [тестовый набор](TESTING/Pet_House_TESTSUIT.pdf)
 
 Тестирование [запросов методом GET](https://github.com/Egessihora/Pet_House/tree/master/GET_API-test) проведено с помощью Postman. Для проведения данного
-тестирования в Postman необходимо загрузить коллекцию в виде [json-файла](GET_API-test/GET_REST_API_of_PETS_params.postman_collection.json) и загрузить для прогона коллекции набор [тестовых данных](GET_API-test/List_of_PETS_params.csv)
+тестирования в Postman необходимо загрузить коллекцию тестов в виде [json-файла](GET_API-test/GET_REST_API_of_PETS_params.postman_collection.json) и загрузить для прогона коллекции набор [тестовых данных](GET_API-test/List_of_PETS_params.csv)
 
 По результатам тестов составлен [отчёт об обнаруженных дефектах](TESTING/Pet_House_BUGS.pdf)
